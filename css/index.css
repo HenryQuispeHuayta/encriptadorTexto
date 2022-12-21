@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #F3F5FC;
+}
+
+#texto {
+  border-style: none;
+  position: absolute;
+  width: 577px;
+  height: 48px;
+  left: 240px;
+  top: 168px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+
+  color: #0a3871;
+}
+
+button{
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+
+  padding: 10px 50px;
+  font-size: 10pt;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.75;
+}
+
+.encriptar{
+  background-color: #0A3871;
+  color: white;
+}
+
+.desencriptar{
+  background-color: #D8DFE8;
+  /* color: darkblue 300; */
+  color: #0A3871;
+}
