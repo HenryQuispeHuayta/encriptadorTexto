@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encriptador</title>
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-  <input type="text" name="" id="texto" placeholder="Ingrese el texto aqui">
-  <div>
-    <div class="textoSalida"></div>
-    <img src="img/Muñeco.png" alt="Imagen">
-    <p>Ningún mensaje fue encontrado</p>
-    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-  </div>
-  <div>
-    <button class="encriptar">Encriptar</button>
-    <button class="desencriptar">Desencriptar</button>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="cabezera">
+        <ul>
+          <li>
+            <img src="img/Logo.png" alt="logo" />
+          </li>
+          <li>
+            <!-- Encriptador -->
+            <h1>Encriptador</h1>
+          </li>
+          <!-- <li>ae</li> -->
+        </ul>
+      </div>
+    </header>
+    <main>
+      <p>Esta es una aplicación que encripta textos.</p>
+      <p>Las "llaves" de encriptación son las siguientes:</p>
+      <div>
+        <ul class="letrasEncriptadas">
+          <li>La letra "e" es convertida para "enter"</li>
+          <li>La letra "i" es convertida para "imes"</li>
+          <li>La letra "a" es convertida para "ai"</li>
+          <li>La letra "o" es convertida para "ober"</li>
+          <li>La letra "u" es convertida para "ufat"</li>
+        </ul>
+      </div>
+      <div class="contenido">
+        <div class="contenedor">
+          <ul>
+            <li>
+              <input
+                type="text"
+                class="textoEncriptar"
+                id="textoEncriptar"
+                placeholder="Texto a Encriptar"
+              />
+            </li>
+            <li>
+              <button class="botonEncriptar" id="botonEncriptar">Encriptar</button>
+            </li>
+          </ul>
+        </div>
+        <div class="contenedor">
+          <ul>
+            <li>
+              <input
+                type="text"
+                class="textoDesencriptar"
+                id="textoDesencriptar"
+                placeholder="Texto a Desencriptar"
+              />
+            </li>
+            <li>
+              <button class="botonDesencriptar">Desencriptar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="historial">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio non, nisi
+        natus perferendis expedita aliquam perspiciatis aliquid soluta
+        provident, exercitationem ut suscipit et facilis ducimus, nulla atque
+        eaque accusamus. Quidem.
+      </div>
+    </main>
+  </body>
 </html>

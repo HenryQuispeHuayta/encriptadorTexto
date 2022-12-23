@@ -1,28 +1,39 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #F3F5FC;
+  /* font-size: 11pt; */
+  /* background-color: #f3f5fc; */
 }
 
-#texto {
-  border-style: none;
-  position: absolute;
-  width: 577px;
-  height: 48px;
-  left: 240px;
-  top: 168px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
-
-  color: #0a3871;
+header{
+  background-color: #00214a;
+  padding: 1rem 0;
+  color: white;
 }
 
-button{
-  border: none;
+.cabezera {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+}
+
+.cabezera ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.cabezera li{
+  display: inline;
+}
+
+button {
+  /* border: none; */
   border-radius: 10px;
   font-weight: 500;
 
@@ -32,17 +43,73 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+/* button:hover {
   opacity: 0.75;
+} */
+
+main{
+  padding: 1em;
 }
 
-.encriptar{
-  background-color: #0A3871;
+.contenido{
+  display: flex;
+  padding: 2rem 0;
+}
+
+.contenedor{
+  display: flex;
+  margin: 1rem 0 0 5px;
+  /* margin-top: 20px; */
+  border: 1px solid #e0e1e5;
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column;
+  /* background-color: #00214a; */
+  /* display: inline-block; */
+  /* justify-content: end; */
+}
+
+/* .contenedor ul{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+} */
+
+.contenedor li{
+  display: flex;
+  padding: 5px 0;
+  justify-content: center;
+}
+
+.botonEncriptar{
+  background-color: #3d58a4;
+  color: white;
+  border-color: #3d58a4;
+}
+
+button:hover{
+  background-color: #3358ff;
+  border-color: #3358ff;
+  box-shadow: 0 10px 30px rgba(51,88,255,.3);
+}
+
+.botonDesencriptar:hover{
   color: white;
 }
 
-.desencriptar{
-  background-color: #D8DFE8;
-  /* color: darkblue 300; */
-  color: #0A3871;
+.botonDesencriptar{
+  background-color: white;
+  color: #3d58a4;
+  border-color: #3d58a4;
 }
+
+/* .encriptar{
+  background-color: #0A3871;
+  color: white;
+} */
+
+/* .desencriptar{ */
+/* background-color: #D8DFE8; */
+/* color: darkblue 300; */
+/* color: #0A3871; */
+/* } */
