@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador</title>
     <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
@@ -39,40 +38,59 @@
         <div class="contenedor">
           <ul>
             <li>
-              <input
+              <textarea
+                name="des"
+                id="textoEncriptar"
+                placeholder="Texto a Encriptar"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <!-- <input
                 type="text"
                 class="textoEncriptar"
                 id="textoEncriptar"
                 placeholder="Texto a Encriptar"
-              />
+              /> -->
             </li>
             <li>
-              <button class="botonEncriptar" id="botonEncriptar">Encriptar</button>
+              <button class="botonEncriptar" id="botonEncriptar">
+                Encriptar
+              </button>
             </li>
           </ul>
         </div>
         <div class="contenedor">
           <ul>
             <li>
-              <input
+              <textarea
+                name="des"
+                id="textoDesencriptar"
+                placeholder="Texto a Desencriptar"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <!-- <input
                 type="text"
                 class="textoDesencriptar"
                 id="textoDesencriptar"
                 placeholder="Texto a Desencriptar"
-              />
+              /> -->
             </li>
             <li>
-              <button class="botonDesencriptar">Desencriptar</button>
+              <button class="botonDesencriptar" id="botonDesencriptar">
+                Desencriptar
+              </button>
             </li>
           </ul>
         </div>
       </div>
-      <div class="historial">
+      <div class="historial" id="historial">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio non, nisi
         natus perferendis expedita aliquam perspiciatis aliquid soluta
         provident, exercitationem ut suscipit et facilis ducimus, nulla atque
         eaque accusamus. Quidem.
       </div>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
