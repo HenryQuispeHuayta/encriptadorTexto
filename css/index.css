@@ -51,6 +51,12 @@ main{
   padding: 1em;
 }
 
+.general{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
 .contenido{
   display: flex;
   padding: 2rem 0;
@@ -79,6 +85,13 @@ main{
   display: flex;
   padding: 5px 0;
   justify-content: center;
+}
+
+.historial{
+  border: 1px solid #e0e1e5;
+  border-radius: 5px;
+  margin-left: 50px;
+  padding: 2rem;
 }
 
 .botonEncriptar{

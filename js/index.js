@@ -12,6 +12,9 @@ let botonDesencriptar = document.querySelector("#botonDesencriptar");
 
 let historial = document.getElementById("historial");
 
+botonEncriptar.addEventListener("click", encriptar);
+botonDesencriptar.addEventListener("click", desenciptar);
+
 function encriptar() {
   let texto = textoEncriptado.value;
   texto = texto
@@ -35,8 +38,6 @@ function desenciptar() {
   textoEncriptado.innerText = textoDes;
 }
 
-botonEncriptar.addEventListener("click", encriptar);
-botonDesencriptar.addEventListener("click", desenciptar);
 
 // botonEncriptar.onclick = encriptar;
 
